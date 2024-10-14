@@ -1,0 +1,17 @@
+# Definir dos matrices de tamaño 2x2
+A = [[1, 2], [3, 4]]
+B = [[5, 6], [7, 8]]
+
+# Crear una matriz resultado de 2x2
+resultado = [[0, 0], [0, 0]]
+
+# Multiplicar las matrices A y B
+for i in range(2):
+    for j in range(2):
+        for k in range(2):
+            resultado[i][j] += A[i][k] * B[k][j]
+
+# Imprimir la matriz resultado
+print("Resultado de la multiplicación de matrices:")
+for fila in resultado:
+    print(fila)
